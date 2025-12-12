@@ -190,7 +190,7 @@ class Video(Base):
     is_draft = Column(Boolean, nullable=False, default=True)
 
     # Generation Metadata (stored as JSON)
-    metadata = Column(JSON, nullable=True)
+    generation_metadata = Column(JSON, nullable=True)
     # Example structure:
     # {
     #     "scenes": [
@@ -251,8 +251,8 @@ class Publication(Base):
     post_id = Column(String(200), nullable=True)  # Platform-specific post ID
     post_url = Column(String(500), nullable=True)  # Direct URL to post
 
-    # Metadata (stored as JSON)
-    metadata = Column(JSON, nullable=True)
+    # Publication Metadata (stored as JSON)
+    publish_metadata = Column(JSON, nullable=True)
     # Example structure:
     # {
     #     "title": "5 Amazing Space Facts",
