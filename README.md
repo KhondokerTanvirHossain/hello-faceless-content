@@ -99,12 +99,14 @@ Web portal with configuration options:
 
 ## 🚀 Quick Start
 
+**⚡ Get started in 5 minutes!** → **[Read the QUICKSTART Guide](QUICKSTART.md)** 🎯
+
 ### Prerequisites
 
 - Python 3.11 or higher
 - API keys for at least one LLM provider:
-  - [Anthropic Claude](https://console.anthropic.com/) (recommended)
-  - [OpenAI](https://platform.openai.com/)
+  - [Anthropic Claude](https://console.anthropic.com/) (recommended - $5 free credit)
+  - [OpenAI](https://platform.openai.com/) ($5 free credit)
   - [AWS Bedrock](https://aws.amazon.com/bedrock/)
 
 ### Installation
@@ -129,6 +131,8 @@ cp .env.example .env
 python scripts/init_db.py
 ```
 
+**📖 For detailed step-by-step instructions with troubleshooting**, see **[QUICKSTART.md](QUICKSTART.md)**
+
 ### Configuration
 
 Edit `.env` with your API keys:
@@ -139,8 +143,8 @@ ANTHROPIC_API_KEY=your_claude_api_key_here
 OPENAI_API_KEY=your_openai_api_key_here
 
 # Optional: AWS Bedrock
-AWS_ACCESS_KEY_ID=your_aws_access_key
-AWS_SECRET_ACCESS_KEY=your_aws_secret_key
+AWS_ACCESS_KEY_ID=your_aws_access_key_id
+AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
 AWS_REGION=us-east-1
 
 # Social Media (for Phase 4)
